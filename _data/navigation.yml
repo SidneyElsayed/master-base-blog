@@ -3,48 +3,50 @@ header-links:
     url: /
   - text: About
     url: /about
+  - text: Services
+    url: /services
+    sublinks:
+    - text: Manuscript Evaluation
+      url: /
+    - text: Developmental Editing
+      url: /
+    - text: Book Coaching
+      url: /
+    - text: Ghost Writing
+      url: /
+    - text: Retainer Packages
+      url: /
+    - text: Custom Projects
+      url: /
+  - text: Contact Us
+    url: /contact
   - text: Blog
     url: /blog
-    sublinks:
-    - text: Travel & Lifestyle
-      url: /
-    - text: Food
-      url: /
-    - text: Blog
-      url: /blog
-    - text: Guides 
-      url: /
-  - text: Contact
-    url: /contact
 
 footer-links:
-  - heading: What we do
+  - heading: Develop Your Skills
     links:
-    - text: Travel
+    - text: Manuscript Evaluation
       url: /
-    - text: Lifestyle & Fashion
+    - text: Developmental Editing
       url: /
-    - text: Foodie
+    - text: Book Coaching
       url: /
-  - heading: About Us
+  - heading: Done For You
     links:
-    - text: Mission & Vision
+    - text: Ghost Writing
       url: /
-    - text: History
+    - text: Custom Projects
       url: /
-    - text: Our People
+    - text: Retainer Packages
       url: /
-    - text: Financial Transparency
-      url: /
-    - text: Privacy Policy
-      url: /
-  - heading: Get Involved
+  - heading: About
     links:
-    - text: Volunteer Opportunities
+    - text: About Us
       url: /
-    - text: Become a Partner
+    - text: Blog
       url: /
-    - text: Work With Us
+    - text: Contact Us
       url: /
 footer-contact:
   heading: Company Name
