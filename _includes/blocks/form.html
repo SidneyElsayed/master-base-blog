@@ -22,25 +22,20 @@
             {% when 'text' %}
 
 
-              <input type="text" name="{{input.name}}" id="{{input.name}}" placeholder="{{input.placeholder-text}}" {% if input.required %} required {% endif %}>
+              <input class="outline-none" type="text" name="{{input.name}}" id="{{input.name}}" placeholder="{{input.placeholder-text}}" {% if input.required %} required {% endif %}>
 
               
               {% when 'email' %}
-              <input type="email" name="{{input.name}}" id="{{input.name}}" placeholder="{{input.placeholder-text}}"  {% if input.required %} required {% endif %}>
+              <input class="outline-none" type="email" name="{{input.name}}" id="{{input.name}}" placeholder="{{input.placeholder-text}}"  {% if input.required %} required {% endif %}>
               
               {% when 'phone' %}
-              <input class="font-normal text-featured rounded-2xl block w-full px-4 py-2 outline-none focus:bg-[var(--featured-color-v-light-blue)]"  type="tel" name="{{input.name}}" id="{{input.name}}" placeholder="{{input.placeholder-text}}"  {% if input.required %} required {% endif %}>
-                <!-- SMS Consent -->
-                <div>
-                  <input class="inline" type="checkbox" name="sms-consent" id="sms-consent" />
-                  <label class="inline featured-text text-sm/6 font-light" for="_replyto"> I consent to receive SMS on this number. </label>
-                </div>
+              <input class="font-normal text-featured block w-full px-4 py-2 outline-none focus:bg-[var(--featured-color)]"  type="tel" name="{{input.name}}" id="{{input.name}}" placeholder="{{input.placeholder-text}}"  {% if input.required %} required {% endif %}>
 
               {% when 'checkbox' %}
               <div class="">
                 {% for box in input.boxes %}
                   <label class="block font-normal text-lg" for="{{box.checkbox-option}}">
-                    <input class="font-normal text-featured rounded-2xl px-4 py-2 outline-none focus:bg-[var(--featured-color-v-light-blue)]"  type="checkbox" name="{{box.checkbox-option}}" id="{{box.checkbox-option}}"> {{box.checkbox-option}}
+                    <input class="font-normal text-featured rounded-2xl px-4 py-2 outline-none focus:bg-[var(--featured-color)]"  type="checkbox" name="{{box.checkbox-option}}" id="{{box.checkbox-option}}"> {{box.checkbox-option}}
                   </label>
                 {% endfor %}
               </div>
@@ -49,13 +44,13 @@
               <div class="">
                 {% for box in input.boxes %}
                   <label class="block font-normal text-lg" for="{{box.checkbox-option}}">
-                    <input class="font-normal text-featured rounded-2xl px-4 py-2 outline-none focus:bg-[var(--featured-color-v-light-blue)]"  type="radio" name="{{input.name}}" id="{{box.checkbox-option}}"> {{box.checkbox-option}}
+                    <input class="font-normal text-featured rounded-2xl px-4 py-2 outline-none focus:bg-[var(--featured-color)]"  type="radio" name="{{input.name}}" id="{{box.checkbox-option}}"> {{box.checkbox-option}}
                   </label>
                 {% endfor %}
               </div>
               
               {% when 'textarea' %}
-              <textarea name="{{input.name}}" id="{{input.name}}" placeholder="{{input.placeholder-text}}"  {% if input.required %} required {% endif %}></textarea>
+              <textarea class="outline-none" name="{{input.name}}" id="{{input.name}}" placeholder="{{input.placeholder-text}}"  {% if input.required %} required {% endif %}></textarea>
               
               {% endcase %}
 
