@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+
+<section class="grid grid-cols-12">
+
+    <div class="col-span-12 md:col-span-8 lg:col-span-9 blog-content">
+
+        <div class="pr-12">
+
+            {% for item in page.categories limit: page.categories-shown %}
+              <a href="/{{item | replace:' ','-'}}" class="tag"> {{ item }}</a>
+            {% endfor %}
+            
+            <h1 class="featured-font"> {{ page.title }} </h1>
+            <h3 class="detail-font text-lg uppercase opacity-50"> {{ page.subtitle }} </h3>
+            
+            <p class="post-info"> by {{ page.author }} | {{ page.date | date_to_string }} | {{ page.read }} read </p>
+         
+        </div>
+        <div class="pr-12 pt-8">
+
+            {{content}}
+
+        </div>
+        
+        {% include /post-related/social-share.html %}
+
+        {% include /post-related/comments.html %}
+
+    </div>
+
+    {% include /post-related/sidebar.html %}
+
+</section>
+
+{% include /post-related/related-posts.html %}

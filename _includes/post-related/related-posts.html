@@ -1,0 +1,29 @@
+<section class="bg-light padded related-posts">
+
+  <h4 class="text-center"> Related Posts </h4>
+  
+  <div class="grid grid-cols-3">
+  
+  
+  {% capture pageCategory %}{{ page.categories[0] }}{% endcapture %}
+
+  {% assign relevant-posts = site.categories[pageCategory] | where_exp:"post","post.url != page.url and post.hidden != true" %}
+
+    {% for post in relevant-posts limit:3 %}
+
+  
+        <a href="{{post.url}}" class="col-span-3 md:col-span-1 p-14 post-item">
+          <div class="mb-4 aspect-[5/4]"> 
+            <img src="{{ post.featured_image }}" class="inset-0 h-full w-full object-cover object-center pr-3">
+          </div>
+          
+              <span class="post-info">by {{post.author}} | </span> 
+              <span class="post-info"> {{ post.date | date_to_string }} </span>
+          
+              <h3 class="mt-2 featured-font"> {{post.title}} </h3>
+        </a>
+        
+    {% endfor %}
+  </div>
+  
+</section>

@@ -1,0 +1,25 @@
+<!------------------ SIDEBAR  --------------------------------->
+<aside class="md:col-span-4 lg:col-span-3">
+
+  <div class="bg-[var(--featured-color)]">
+      <div>
+        <img src="/images/" class="">
+      </div>
+      <div class="mb-4 p-4 hover-white">
+          <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p> 
+          <a href="/about-us.html" class="subtle-button">More about us</a>
+      </div>
+  </div>
+
+  <div class="bg-[var(--featured-color)] mb-4 p-4">
+      <h4 class="mt-2 featured-font"> Recent Posts </h4>
+      <nav class="recent-posts-nav hover-white"> 
+          {% for page in site.posts limit:8 %}
+                <a href="{{page.url}}" class="block leading-7 pb-2"> {{page.sidebar-title}}</a>
+          {% endfor %}
+      </nav>
+  </div>
+
+  
+
+</aside> <!-- end sidebar-->
