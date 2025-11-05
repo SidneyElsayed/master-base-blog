@@ -15,23 +15,23 @@
         <!-- Link Group Loop -->
         {% for menu in site.data.navigation.footer-links %}
         <div class="col-span-4 sm:col-span-2 lg:col-span-1">
-          <p class="font-semibold leading-8">{{menu.heading}}</p>
+          <h5 class="font-semibold leading-8">{{menu.heading}}</h5>
           {% for link in menu.links %}
-          <a href="{{link.url}}" class="font-thin block leading-7">{{link.text}}</a>
+          <a href="{{link.url}}" class="block leading-7">{{link.text}}</a>
           {% endfor %}
         </div>
         {% endfor %}
   
         <!-- Address -->
         <div class="col-span-4 sm:col-span-2 lg:col-span-1">
-          <p class="font-semibold leading-8">{{site.data.navigation.footer-contact.heading}}</p>
-          <a href="{{link.url}}" target="_blank" class="font-thin block leading-7">{{site.data.navigation.footer-contact.map-text-1}}<br> {{site.data.navigation.footer-contact.map-text-2}} </a>
-          <a href= “tel:{{site.data.navigation.footer-contact.phone-number}}” class="font-thin block leading-7">{{site.data.navigation.footer-contact.phone-text}} </a>
+          <h5 class="font-semibold leading-8">{{site.data.navigation.footer-contact.heading}}</h5>
+          <a href="{{link.url}}" target="_blank" class="block leading-7">{{site.data.navigation.footer-contact.map-text-1}}<br> {{site.data.navigation.footer-contact.map-text-2}} </a>
+          <a href= “tel:{{site.data.navigation.footer-contact.phone-number}}” class="block leading-7">{{site.data.navigation.footer-contact.phone-text}} </a>
         </div>
       </nav>
 
       <!-- Copyright -->
-      <div class="p-4 col-span-6 text-center italic">
+      <div class="p-4 col-span-6 text-center body-font italic">
         <p class="font-thin">Copyright© 2025 Company name™. All rights reserved.</p>
       </div>
     </div>

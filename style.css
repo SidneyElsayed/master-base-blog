@@ -20,6 +20,108 @@ section {
     max-width: 1000px;
 }
 
+/* Typography */
+body {
+    font-family: "Poppins", sans-serif;
+    color: #262626;
+}
+
+.body-font {
+  font-family: "Poppins", sans-serif;
+}
+
+.serif-font {
+    font-family: "DM Serif Display", sans-serif;
+}
+
+.cursive-font {
+    font-family: "Babylonica", cursive;
+}
+
+footer .serif-font {
+  font-size: 30px;
+}
+
+footer .body-font {
+  font-size: 16px;
+}
+
+.copyright {
+  font-weight: 200;
+  border-bottom: 1px solid;
+}
+
+header .body-font {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+	margin-bottom: 0;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1.1rem; }
+
+p, li {
+  line-height: 1.8; 
+  margin-bottom: 1rem;
+  font-family: "Martel", serif;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.subtitle         { font-size: 0.8rem; }
+
+/* Basic p & a styles */
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: var(--featured-color); 
+  }
+  
+  .hover-white a:hover {
+    color: white; 
+  }
+  
+  .hover-dark a:hover {
+    color: var(--featured-color-dark); 
+  }
+  
+  p a {
+      text-decoration: none;
+      color: var(--medium-text);
+      font-weight: 700;
+      border-bottom: 2px solid;
+      display: inline-block;
+  }
+  
+  p a:hover { 
+    color: var(--featured-text); 
+  }
+
 /* Button Classes */
 
 .button {
