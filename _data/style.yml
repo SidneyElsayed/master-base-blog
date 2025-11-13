@@ -1,21 +1,21 @@
 schemes-colors:
   - scheme_name: base
-    bg-color: '#ffffff'
-    bg-secondary-color: '#f2ede1'
-    featured-color: '#f2ede1'
-    text-color: '#1d1d1b'
+    bg-color: '#FBF9F7'
+    bg-secondary-color: '#EAE0D5'
+    featured-color: '#3F5E6D'
+    text-color: '#22333B'
   - scheme_name: dark
-    bg-color: '#1d1d1b'
-    bg-secondary-color: '#2d2d2b'
-    featured-color: '#227'
-    text-color: '#ffffff'
+    bg-color: '#22333B'
+    bg-secondary-color: '#3F5E6D'
+    featured-color: '#D7C5B1'
+    text-color: '#FBF9F7'
   - scheme_name: featured
-    bg-color: '#f2ede1'
-    bg-secondary-color: '#ffffff'
-    featured-color: '#227'
-    text-color: '#000'
-  - scheme_name: footer
-    bg-color: '#1d1d1b'
-    bg-secondary-color: '#2d2d2b'
-    featured-color: '#227'
-    text-color: '#ffffff'
+    bg-color: '#3F5E6D'
+    bg-secondary-color: '#22333B'
+    featured-color: '#B5936D'
+    text-color: '#EAE0D5'
+  - scheme_name: brown
+    bg-color: '#7D6A53'
+    bg-secondary-color: '#B5936D'
+    featured-color: '#3F5E6D'
+    text-color: '#EAE0D5'

@@ -10,15 +10,15 @@
       {% for link in site.data.navigation.header-links %}
 
         {% if link.sublinks %}
-          <span class="relative group p-2">
+          <span class="relative group">
         {% endif %}
         
-        <a href="{{link.url}}" class="flex justify-center p-2 my-4">{{link.text}}</a>
+        <a href="{{link.url}}" class="flex justify-center p-3 my-5">{{link.text}}</a>
 
         {% if link.sublinks %}
-        <div class="absolute top-4 left-0 bg-[var(--bg-color)] hidden group-hover:block z-20">
+        <div class="absolute top-14 left-0 bg-[var(--bg-color)] hidden group-hover:block z-20">
           {% for sublink in link.sublinks %}
-            <a href="{{sublink.url}}" class="px-2 whitespace-pre block">{{sublink.text}}</a>
+            <a href="{{sublink.url}}" class="p-2 whitespace-pre block">{{sublink.text}}</a>
           {% endfor %}
         </div>
           </span>
