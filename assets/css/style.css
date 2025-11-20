@@ -479,6 +479,9 @@ video {
 .top-14 {
     top: 3.5rem;
 }
+.top-16 {
+    top: 4rem;
+}
 .z-20 {
     z-index: 20;
 }
@@ -793,6 +796,9 @@ video {
 .outline-none {
     outline: 2px solid transparent;
     outline-offset: 2px;
+}
+.outline {
+    outline-style: solid;
 }
 .filter {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
