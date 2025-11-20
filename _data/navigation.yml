@@ -6,18 +6,12 @@ header-links:
   - text: Services
     url: /services
     sublinks:
-    - text: Manuscript Evaluation
-      url: /
     - text: Developmental Editing
-      url: /
+      url: /services#section-3
     - text: Book Coaching
-      url: /
+      url: /services#section-2
     - text: Ghost Writing
-      url: /
-    - text: Retainer Packages
-      url: /
-    - text: Custom Projects
-      url: /
+      url: /services#section-1
   - text: Contact Us
     url: /contact
   - text: Blog
